@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Built in 28/07/2021 by Samuel Valmir-->
+<!-- Built in 28/07/2021 - 29/07/2021 by Samuel Valmir-->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./Assets/logo.jpeg" type="image/png">
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <title>Kakatú</title>
 </head>
 
@@ -15,15 +18,27 @@
     <header>
         <img src="./Assets/logo.jpeg" alt="Logo da Kakatú" title="Logo da Kakatú">
         <div class="headerItens">
-            <h2 class="headerItem">Cardápio</h2>
-            <h2 class="headerItem">Horários</h2>
-            <h2 class="headerItem">Localização</h2>
-            <h2 class="headerItem">Contato</h2>
+            <a class="headerItem" href="#beginAnchor">Início</a>
+            <a class="headerItem" href="#menuAnchor">Cardápio</a>
+            <a class="headerItem" href="#requestAnchor">Pedir</a>
+            <a class="headerItem" href="#locationAnchor">Localização</a>
+            <a class="headerItem" href="#scheduleAnchor">Horários</a>
+            <a class="headerItem" href="#contactAnchor">Contato</a>
         </div>
     </header>
 
     <section>
+        <div id="beginAnchor"></div>
+        <div class="presentation">
+            <h2>Seja Bem Vindo! </h2>
+            Fazemos comidas tão boas quanto a comida da mamãe!
+            Você vai se deliciar com os nosso pratos! Aqui você <br>
+            -Escolha o prato que mais gosta e recheios que combinam com o seu gosto. <br>
+            -Então escolhe se a delícia vem até você ou se você vai até ela. <br>
+            -Depois disso basta finalizar o pedido, pagar e se deliciar. 
+        </div>
 
+        <div id="menuAnchor"></div>
         <div class="menu">
             <h2>Cardápio</h2>
 
@@ -41,7 +56,7 @@
 
             <div class="option">
                 <img src="./Assets/Menu/VatapaComArroz.jpg" alt="Vatapá Com Arroz" title="Vatapá Com Arroz">
-                Vatapá com ou sem arroz e batata palha.
+                Vatapá com arroz e batata palha.
                 <div class="btn">Pedir agora</div>
             </div>
 
@@ -71,7 +86,7 @@
 
             <br><br>
 
-            Carne, frango, calabresa, presunto e queijo.
+            
 
             1 recheio 4,00
             2 recheios 5,00
@@ -79,24 +94,134 @@
             Adicionar salada e catupiry acrescenta 1,00
             <br><br>
         </div>
+
         <hr>
-        
-        <div class="schedule">
-            <h1>Horários</h1>
-            seg - sex: 17h - 20h <br>
-            sab - dom: 17h - 23h <br><br>
-        </div>
-        <hr>
-        <div class="location">
-            
+        <div id="scheduleAnchor"></div>
+        <div id="locationAnchor"></div>
+
+
+        <div id="requestAnchor"></div>
+        <div class="container">
+            <div class="formContainer containerElement">
+                <h2>Faça Seu Pedido</h2>
+                <form action="">
+                    <table>
+                        <tr>
+                            <td><label>Nome: </label></td>
+                            <td><input type="text" name=""></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="sopa">Sopa/label></td>
+                            <td><input id="sopa" type="checkbox" name="SopaDeCarne"></td>
+                            
+                            <td><label>Feijão</label><input type="checkbox" name="adicionarFeijao"></td>
+
+                            <td><label>Carne</label><input type="checkbox" name="adicionarCarne"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="munginza">Mungunzá</label> </td>
+                            <td><input id="mungunza" type="checkbox" name="mungunza"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="vatapa">Vatapá</label></td>
+                            <td><input id="vatapa" type="checkbox" name="vatapa"></td>
+
+                            <td><label>Arroz</label><input type="checkbox" name="adicionarArroz"></td>
+
+                            <td><label>Batata Palha</label><input type="checkbox" name="adicionarBatataPalha"></td>
+
+                        </tr>
+
+                        <tr>
+                            <td><label for="baiaoCremoso">Baião Cremoso</label></td>
+                            <td><input id="baiaoCremoso" type="checkbox" name="baiaoCremoso"> </td>
+
+                        </tr>
+
+                        <tr>
+                            <td><label for="macaxeira">Macaxeira</label></td>
+                            <td><input id="macaxeira" type="checkbox" name="macaxeira"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="espetinho">Espetinho</label></td>
+                            <td><input id="espetinho" type="checkbox" name="espetinho"></td>
+
+                            <td><label>Boi</label><input type="checkbox" name="boi"></td>
+
+                            <td><label>Frango</label><input type="checkbox" name="frango"></td>
+
+                            <td><label>Bacon</label><input type="checkbox" name="bacon"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="pastel">Pastel</label></td>
+                            <td><input id="pastel" type="checkbox" name="pastel"></td>
+
+                            <td><label>Carne</label><input type="checkbox" name="carne"></td>
+                            <td><label>Frango</label><input type="checkbox" name="frango"></td>
+                            <td><label>Calabresa</label><input type="checkbox" name="calabresa"></td>
+                            <td><label>Presunto</label><input type="checkbox" name="presunto"></td>
+                            <td><label>Queijo</label><input type="checkbox" name="queijo"></td>
+
+                        </tr>
+
+                        <tr>
+                            <td><label>Fone: </label></td>
+                            <td><input type="text" name=""><br></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Mensagem: </label></td>
+                            <td><textarea type="text" name=""></textarea><br></td>
+                        </tr>
+                        <tr>
+                            <td colspan="8"><input class="btn" type="submit" value="Finalizar Pedido"></td>
+                        </tr>
+                    </table>
+
+
+
+                </form>
+            </div>
+
+            <div id="locationAnchor"></div>
+            <div class="location containerElement">
+                <h2>Como Chegar</h2>
+
+                Estado: Indiana IN <br>
+                Cidade: Portage <br>
+                Rua: Duffy Street 1146 <br>
+                CEP: 46383
+            </div>
+
+            <div id="scheduleAnchor"></div>
+            <div class="schedule containerElement">
+                <h2>Horários</h2>
+
+                seg - sex: 17h - 20h <br>
+                sab - dom: 17h - 23h
+            </div>
+
+            <div id="contactAnchor"></div>
+            <div class="contact containerElement">
+                <h2>Contato</h2>
+
+                219-787-9433 <br>
+                xxf9kllg6rr@temporary-mail.net
+            </div>
         </div>
 
-        <div class="contact"></div>
+
 
         <footer>
             <a href="https://br.freepik.com/fotos/alimento">Alimento foto criado por KamranAydinov - br.freepik.com</a>
             <br>
-            Copyright ©2021 Samuel V. S. Tavares - Desenvolvedor Web
+            <a href="https://www.linkedin.com/in/samuel-valmir-8a92bb218/">2021 Samuel V. S. Tavares - Desenvolvedor
+                Web</a>
         </footer>
     </section>
 

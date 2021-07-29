@@ -1,39 +1,72 @@
 *{
     padding: 0px;
     margin: 0px;
+    text-decoration: none;
 }
 
 body{
-    /* background-color: tomato; */
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-image: url("../Assets/Background/Background2.jpg");
+    font-family: 'Indie Flower', cursive, sans-serif;
+    background-color: #f1f5f9;
     background-repeat: no-repeat;
     background-size: cover;
+    font-size: larger;
 }
 
 header{
-    background-color: #8DE6FC;
+    background-color: #806D59;
     position: sticky;
     text-align: center;
     top: 0pt;
     box-shadow: 0px 2px 10px ;
+    padding-top: 15px ;
 
 }
 
+#beginAnchor{
+    position: absolute;
+    margin-top: -200px;
+}
+
+#menuAnchor{
+    position: absolute;
+    margin-top: -150px;
+}
+
+
+#requestAnchor{
+    position: absolute;
+    margin-top: -180px;
+}
+
+#locationAnchor #contactAnchor{
+    position: absolute;
+    margin-top: -0px;
+}
+
+#scheduleAnchor{
+    position: absolute;
+    margin-top: 50px;
+}
+
+
 .headerItens{
-    background-color: #8D9BFC;
+    background-color: #250E02;
+    color: #EEEEEE;
 }
 
 .headerItem{
-    width: 20%;
+    color: #EEEEEE;
+    font-size: x-large;
+    font-weight: bold;
+
+    width: 10%;
     padding: 10px;
     
     display: inline-block;
 }
 
 .headerItem:hover{
-    background-color: #546afc;
-    color: whitesmoke;
+    background-color: #5f2b0e;
     cursor: pointer;
 }
 
@@ -50,11 +83,16 @@ header img{
 
 
 
+
 section{
     text-align: center;
 }
 
-.menu{ background-color: rgba(219, 53, 53, 0.3) ;
+.presentation{
+    margin-top: 40px;
+}
+
+.menu{  background-color: #806d590a; ;
     margin: auto;
     max-width: 1000px;
     width: 90%;
@@ -62,25 +100,26 @@ section{
 
     border-radius: 10px;
     box-shadow: 4px 4px 10px;
-
 }
 
 .menu h2{
     margin: 50px 0px;
+    font-size: xx-large;
+    text-decoration: underline;
 }
 
 .menu img{
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 225px;
 
     border-radius: 5px;
     display: block;
 }
 
-
 .option{
     color: black;
 
+    font-size: large;
     font-weight: bolder;
     display: inline-block;
     margin: 0px 10px;
@@ -88,10 +127,11 @@ section{
 }
 
 .btn{
-    background-color: #1B0F01;
-    color: white;
+    background-color: #F2C928;
+    color: #250E02;
 
-    font-weight: bold;
+    font-size: larger;
+    font-weight: bolder;
     text-transform: uppercase;
     padding: 10px;
     margin-top: 5px;
@@ -99,8 +139,8 @@ section{
 }
 
 .btn:hover{
-    background-color: #E6FC8D;
-    color: orangered;
+    background-color: #F28529;
+    color: #F9E493;
     cursor: pointer;
 }
 
@@ -108,13 +148,48 @@ section{
 
 
 
-.schedule{
-    border: 1px solid;
+.container{
+    margin-top: 30px;
     display: inline-block;
+}
+
+.formContainer{
+    text-align: left;
+}
+
+.containerElement{
+    background-color: #806d590a;
+    margin-top: 20px;
+    padding: 10px;
     border-radius: 10px;
 
-    font-size: xx-large;
-    margin: 100px 0px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px;
+}
+
+.container h2{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+textarea, input[type="text"]{
+    width: 100%;
+    border: 1px solid #806D59;
+}
+
+input[type="submit"]{
+    border: none;
+    width: 100%;
+
+    font-size: larger;
+    font-family: 'Indie Flower', cursive, sans-serif;
+    font-weight: bolder;
+}
+
+
+td{
+    text-align: right;
 }
 
 
@@ -124,11 +199,11 @@ section{
 footer{
     background-image: url(../Assets/Background/Footer.jpg);
     color: white;
-
+    
     height: 80px;
+    margin-top: 50px;
 }
 
-/* Cor base
- FCC78B
- Gold Crayola
-*/
+footer a{
+    color: whitesmoke;
+}
