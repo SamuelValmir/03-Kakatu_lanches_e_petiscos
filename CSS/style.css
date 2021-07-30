@@ -203,13 +203,14 @@ td{
 
 footer{
     background-image: url(../Assets/Background/Footer.jpg);
-    color: white;
     
+    padding-top: 30px;
     height: 80px;
     margin-top: 50px;
 }
 
 footer a{
+
     color: whitesmoke;
 }
 
@@ -234,8 +235,4 @@ footer a{
         width: 49%;
         font-size: 2.83vw;
     }
-}
-
-@media screen and (max-width: 660px){
-
 }
